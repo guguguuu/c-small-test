@@ -1,10 +1,13 @@
 /*convert fahrenheit to celsius*/
 //Fahrenheit-Celsius table
 #include<stdio.h>
-//#define size 16 
+#define size 16 
+#define upper 300
+#define lower 0
+#define step 20
 int main()
 {
-/*	int i=0;
+1.	int i=0;
 	int c[size];
 	int f[size];
 	for(i=0;i<size;i++){
@@ -12,8 +15,10 @@ int main()
 		c[i]=5*(f[i]-32)/9; //attention
 		printf("%d     %d\n",f[i],c[i]);
 	}
-*/
-/*	int i=0;
+
+
+
+2.	int i=0;
 	int celsius=0;
 	int fahrenheit=0;  //add 0
 
@@ -22,8 +27,10 @@ int main()
 		fahrenheit=20*i;
 		celsius=5*(fahrenheit-32)/9;
 		printf("%d\t%d\n", fahrenheit, celsius);
-	}*/
-/*	float celsius, fahrenheit;
+	}
+
+	
+3.	float celsius, fahrenheit;
 	int upper,lower,step;
 
 	upper=300;
@@ -38,8 +45,8 @@ int main()
 		fahrenheit+=step;
 		printf("%3.0f%6.1f\n",fahrenheit,celsius);
 	}
-*/
-	float celsius=0;
+
+4.	float celsius=0;
 	float fahrenheit=0;
 	for(fahrenheit=0;fahrenheit<=300;fahrenheit+=20)
 	{ 
